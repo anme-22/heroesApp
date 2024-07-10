@@ -80,15 +80,15 @@ export class NewPageComponent implements OnInit {
       data: this.heroForm.value,
     });
 
-    // dialogRef.afterClosed().subscribe((result) => {
-    //   if (!result) return;
+    dialogRef.afterClosed().subscribe((result) => {
+      if (!result) return;
 
-    //   this.heroesService
-    //     .deleteHeroById(this.currentHero)
-    //     .subscribe((wasDeleted) => {
-    //       if (wasDeleted) this.router.navigate(['/heroes']);
-    //     });
-    // });
+      this.heroesService
+        .deleteHeroById(this.currentHero)
+        .subscribe((wasDeleted) => {
+          if (wasDeleted) this.router.navigate(['/heroes']);
+        });
+    });
   }
 
   showSnackbar(message: string): void {
