@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -12,9 +12,8 @@
       "superhero": "Batman",
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
-      "first_appearance": "my first comic #2",
-      "characters": "Bruce Wayne",
-      "name": "Add your name in the body"
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne"
     },
     {
       "id": "dc-superman",
@@ -167,15 +166,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "wrJpfGb",
-      "superhero": "Deadpool",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Ryan Gosling",
-      "first_appearance": "Deadpool #1",
-      "characters": "Deadpool",
-      "alt_img": "https://upload.wikimedia.org/wikipedia/en/2/23/Deadpool_%282016_poster%29.png"
     }
   ]
 }
