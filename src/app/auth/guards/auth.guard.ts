@@ -17,7 +17,14 @@ const checkAuthStatus = (): boolean | Observable<boolean> => {
   const authService: AuthService = inject(AuthService);
   const router: Router = inject(Router);
 
-  return authService.checkAuthentication();
+  return authService.checkAuthentication().pipe(
+    tap((isAuthenticated) => console.log('Authenticated:', isAuthenticated)),
+    tap((isAuthenticated) => {
+      if (!isAuthenticated) {
+        router.navigate(['./auth/login']);
+      }
+    })
+  );
 };
 
 //No hay necesidad de crear una clase, simplemente definiendo una función flecha y exportándola podemos utilizar sus funcionalidades de guard en el app-routing
