@@ -12,7 +12,7 @@ import {
 } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 
-const checkAuthStatus = (): boolean | Observable<boolean> => {
+const checkAuthStatus = (): Observable<boolean> => {
   //se inyectan el AuthService y el Router
   const authService: AuthService = inject(AuthService);
   const router: Router = inject(Router);
